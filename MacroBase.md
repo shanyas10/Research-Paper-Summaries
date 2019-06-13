@@ -18,6 +18,8 @@ To prioritize attention, MacroBase executes streaming analytics operators that h
 * Presentation: MacroBase’s default presentation mode is a static report rendered via a REST API or GUI.
 * Extensibility: MacroBase’s pipeline architecture lends itself to three major means of extensibility. First, users can add new domain specific feature transformations to the start of a pipeline without modifying the rest of the pipeline. Second, users can input rules and/or labels to MacroBase to perform supervised classification. Third, users can write their own feature transformation, classification, and explanation operators, as well as new pipelines.
 
+![image](https://adriancolyer.files.wordpress.com/2016/03/macrobase-fig-1.png)
+
 	
 **MDP Classification:**
 * MacroBase’s classification operators label input data points, and, by default, identify data points that exhibit deviant behavior. 
