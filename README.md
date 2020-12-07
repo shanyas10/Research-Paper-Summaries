@@ -12,6 +12,9 @@ My notes and takeaways from Research Papers I've read.
   - [Annotated Paper](https://github.com/shanyas10/Research-Paper-Summaries/blob/master/Understanding%20deep%20learning%20requires%20rethinking%20generalization/zhang_2017_iclr.pdf)
 
 - Attention is all you need
+  - [Annotated paper](Attention_Is_All_You_Need/)
   - [Paper](https://arxiv.org/abs/1706.03762)
-  - [Annotated paper](https://github.com/shanyas10/Research-Paper-Summaries/blob/master/Attention_Is_All_You_Need/Attention%20is%20all%20you%20need.pdf)
- 
+
+- Good Enough Compositional Data Augmentation
+  - [Summary]()
+  - [Paper](https://www.aclweb.org/anthology/2020.acl-main.676/)
