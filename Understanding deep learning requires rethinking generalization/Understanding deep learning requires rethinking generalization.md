@@ -1,0 +1,16 @@
+## Understanding deep learning requires rethinking generalization
+
+In this paper, the authors look at the generalization of Deep Convolutional Networks from an interesting perspective trying to answer a very important question: What is it that distinguishes neural networks that generalize well from those that don’t? The answer to this question can help us significantly improve our understanding in terms of interpretability and help us structure better models.
+
+
+They conduct systematic experiments to emphasize that the affective capacity of deep neural networks is large enough to shatter the training data. This wouldn’t really come as a surprise considering that such overly complex models can memorise the data and overfit but things get really interesting when the authors randomly jumble up the labels in a manner that there is no longer a relation between the images and their labels.  Experiments conclude that while one would expect the model to not converge or take a significantly longer time to do so, the training process remains largely unaffected hence implying that  “Deep Neural Networks can easily fit random labels”. Another observation that I find interesting is that once the model starts to fit, it converges quickly. The authors further extend on these experiments and replace images by Gaussian noise and random pixels and the model still converges to zero training error. What’s more surprising is that model with Gaussian noise as input converges faster than the one with random labels. 
+
+
+One experiment that piqued my interest was where they vary the amount of randomization by interpolating smoothly between no noise to complete noise. The results show that neural networks are able to capture the remaining signal in the data while fitting the noisy part at the same time. This hints that well-structured models do have the ability to generalise and that architecture does play a great role in determining the same. It would, therefore, be interesting to see a comparison between strong and weak architectures when fed with noise.
+Next, the authors conduct various experiments with regularization to see if it can mitigate overfitting. The results show that even with explicit regularizers turned off, the models generalize well and hence are neither necessary nor by itself sufficient for controlling generalization error.
+The authors also conduct experiments with implicit regularizers which I found really interesting. While they conclude that early stopping can improve generalization performance, it would be insightful if they explored why it doesn’t work well on CIFAR10 dataset. An interesting analysis in the paper implies that models attain some regularisation using SGD asking us to investigate more on these lines.
+
+
+The paper is really intriguing and left me pondering majorly about the following few points:
+1.	Do these results say something about the learning process and ability of biological neural networks?
+2.	Would it make more sense to look at **what** the network is learning instead of how in order to understand the true cause of generalizability? It would be interesting to visualize what each layer is training upon when fed noise as input.
