@@ -16,5 +16,5 @@ My notes and takeaways from Research Papers I've read.
   - [Paper](https://arxiv.org/abs/1706.03762)
 
 - Good Enough Compositional Data Augmentation
-  - [Summary]()
+  - [Summary](https://github.com/shanyas10/Research-Paper-Summaries/blob/master/Good-Enough%20Compositional%20Data%20Augmentation/Summary.md)
   - [Paper](https://www.aclweb.org/anthology/2020.acl-main.676/)
